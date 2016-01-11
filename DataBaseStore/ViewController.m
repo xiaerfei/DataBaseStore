@@ -21,17 +21,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // 测试 插入数据
-    TestInsert *testInsert = [[TestInsert alloc] init];
-    [testInsert test];
+//    // 测试 插入数据
+//    TestInsert *testInsert = [[TestInsert alloc] init];
+//    [testInsert test];
 //    //测试 更新数据
 //    TestUpdate *testUpdate = [[TestUpdate alloc] init];
 //    [testUpdate test];
 //    //测试 查询数据
 //    TestFetch *testFetch = [[TestFetch alloc] init];
 //    [testFetch test];
-//    TestDelete *testDelete = [[TestDelete alloc] init];
-//    [testDelete test];
+    // 删除数据
+    TestDelete *testDelete = [[TestDelete alloc] init];
+    [testDelete test];
     
     
 }

@@ -13,30 +13,21 @@
 @implementation TestDelete
 
 - (void)test{
-    TestTable *testTable = [[TestTable alloc] init];
     
+    NSTimeInterval begin, end;
+    
+    begin = CACurrentMediaTime();
+    TestTable *testTable = [[TestTable alloc] init];
     NSString *whereCondition = @":age >= :minAge AND :age <= :maxAge";
-    NSNumber *minAge = @(25);
+    NSNumber *minAge = @(20);
     NSNumber *maxAge = @(30);
     NSString *age    = @"age";
     NSDictionary *whereConditionParams = NSDictionaryOfVariableBindings(age,minAge,maxAge);
     
     [testTable deleteWithWhereCondition:whereCondition conditionParams:whereConditionParams];
-    
-    TestModel *testModel = [[TestModel alloc] init];
-    testModel.primaryKey = @(5);
-    
-    TestModel *testModel1 = [[TestModel alloc] init];
-    testModel1.primaryKey = @(6);
-    
-    [testTable deleteDataClassList:@[testModel,testModel1]];
-
-    [testTable deleteWithPrimaryKeyList:@[@(7),@(8)]];
-    
-    
-    
-    
-    
+    end = CACurrentMediaTime();
+    printf("删除 20--30岁之间的人:         %8.8fms   \n", (end - begin)*1000);
+    printf("\n");
 }
 
 @end

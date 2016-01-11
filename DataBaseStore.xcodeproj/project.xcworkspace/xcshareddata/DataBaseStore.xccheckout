@@ -10,29 +10,29 @@
 	<string>DataBaseStore</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>209E8C15264FDB06BB3F340EA7584B9B3B3C3D4C</key>
-		<string>https://git.coding.net/xiaerfei/DataBaseStore.git</string>
+		<key>C757323FC7F078B2B26E6EFB7472D193E7572820</key>
+		<string>https://github.com/xiaerfei/DataBaseStore.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>DataBaseStore/DataBaseStore.xcodeproj</string>
+	<string>DataBaseStore.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>209E8C15264FDB06BB3F340EA7584B9B3B3C3D4C</key>
-		<string>../../..</string>
+		<key>C757323FC7F078B2B26E6EFB7472D193E7572820</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://git.coding.net/xiaerfei/DataBaseStore.git</string>
+	<string>https://github.com/xiaerfei/DataBaseStore.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>209E8C15264FDB06BB3F340EA7584B9B3B3C3D4C</string>
+	<string>C757323FC7F078B2B26E6EFB7472D193E7572820</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>209E8C15264FDB06BB3F340EA7584B9B3B3C3D4C</string>
+			<string>C757323FC7F078B2B26E6EFB7472D193E7572820</string>
 			<key>IDESourceControlWCCName</key>
 			<string>DataBaseStore</string>
 		</dict>
