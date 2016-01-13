@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E25C22F1C4652C70063356A /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E25C22E1C4652C70063356A /* ReadMe.txt */; };
 		4E40FF4D1BF1FC8F00BCAB96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E40FF4C1BF1FC8F00BCAB96 /* main.m */; };
 		4E40FF501BF1FC8F00BCAB96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E40FF4F1BF1FC8F00BCAB96 /* AppDelegate.m */; };
 		4E40FF531BF1FC8F00BCAB96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E40FF521BF1FC8F00BCAB96 /* ViewController.m */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E25C22E1C4652C70063356A /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		4E40FF471BF1FC8F00BCAB96 /* DataBaseStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataBaseStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E40FF4B1BF1FC8F00BCAB96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E40FF4C1BF1FC8F00BCAB96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				4E40FF571BF1FC8F00BCAB96 /* Images.xcassets */,
 				4E40FF591BF1FC8F00BCAB96 /* LaunchScreen.xib */,
 				4E40FF4A1BF1FC8F00BCAB96 /* Supporting Files */,
+				4E25C22E1C4652C70063356A /* ReadMe.txt */,
 			);
 			path = DataBaseStore;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			files = (
 				4E40FF561BF1FC8F00BCAB96 /* Main.storyboard in Resources */,
 				4E40FF5B1BF1FC8F00BCAB96 /* LaunchScreen.xib in Resources */,
+				4E25C22F1C4652C70063356A /* ReadMe.txt in Resources */,
 				4E40FF581BF1FC8F00BCAB96 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

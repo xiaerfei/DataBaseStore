@@ -37,8 +37,6 @@
     } else {
         [sql appendFormat:@"CREATE TABLE IF NOT EXISTS `%@` (%@);", tableName, columns];
     }
-    
-    
     return sql;
 }
 

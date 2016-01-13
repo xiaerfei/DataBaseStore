@@ -38,6 +38,7 @@
 
 - (NSString *)safeSQLMetaString
 {
+    //FIXME: 这里有bug，待修复，包含 '` 符号的会被干掉
     NSCharacterSet *charSet = [NSCharacterSet characterSetWithCharactersInString:@"'`"];
     return [[self componentsSeparatedByCharactersInSet:charSet] componentsJoinedByString:@""];
 }

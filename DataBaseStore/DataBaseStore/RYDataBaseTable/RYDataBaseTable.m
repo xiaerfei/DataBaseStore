@@ -14,6 +14,7 @@
 #import "RYDataBaseRecordProtocol.h"
 #import "NSArray+TransformItemsToClass.h"
 #import "RYDataBaseCriteria.h"
+#import "RYDataBaseMarcos.h"
 
 #define PATH_OF_DOCUMENT    [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
@@ -38,7 +39,9 @@
         NSString *cachePaht = [PATH_OF_DOCUMENT stringByAppendingPathComponent:@"PersonOutLocationRecord"];
         NSString * dbPath = [cachePaht stringByAppendingPathComponent:[self.child databaseName]];
         self.dbPath = dbPath;
-        NSLog(@"%@",dbPath);
+#ifdef DEBUGLOG
+        DELog(@"%@",dbPath);
+#endif
         NSFileManager *fileManager = [NSFileManager defaultManager];
         if ([fileManager fileExistsAtPath:cachePaht] == NO) {
             [fileManager createDirectoryAtPath:cachePaht withIntermediateDirectories:YES attributes:nil error:NULL];
@@ -268,18 +271,26 @@
 
 - (BOOL)executeWithSql:(NSString *)sql
 {
+#ifdef DEBUGLOG
+    DELog(@"%@",sql);
+#endif
     __block BOOL result;
     [_dbQueue inDatabase:^(FMDatabase *db) {
         result = [db executeUpdate:sql];
+#ifdef DEBUGLOG
         if (result == NO) {
-            NSLog(@"%@",db.lastError);
+            DELog(@"%@",db.lastError);
         }
+#endif
     }];
     return result;
 }
 
 - (NSArray *)fetchDataWithSql:(NSString *)sql
 {
+#ifdef DEBUGLOG
+    DELog(@"%@",sql);
+#endif
     __block NSMutableArray *fetchArray = [[NSMutableArray alloc] init];
     [_dbQueue inDatabase:^(FMDatabase *db) {
         FMResultSet * rs = [db executeQuery:sql];
@@ -287,6 +298,9 @@
             [fetchArray addObject:rs.resultDictionary];
         }
         [rs close];
+#ifdef DEBUGLOG
+        DELog(@"%@",db.lastError);
+#endif
     }];
     return fetchArray;
 }
