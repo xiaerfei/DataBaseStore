@@ -8,6 +8,12 @@
 
 #import "RYDataBaseRecordProtocol.h"
 
+//columnInfo
+
+#define COLUMN_INFO(CLASS, PATH)           \
+(((void)(NO && ((void)[CLASS new].PATH, NO)), @# PATH))
+
+
 @interface RYDataBaseRecord : NSObject <RYDataBaseRecordProtocol>
 
 @end

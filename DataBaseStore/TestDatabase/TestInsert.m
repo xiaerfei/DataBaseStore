@@ -22,7 +22,7 @@
     
     [testTable insertDataList:@[@{@"name" :@"大哥",
                                   @"age"  :@(22),
-                               @"stuClass":@(3),
+                                  @"stuClass":@(3),
                                   @"tomas":@"lol 上单 擅长鳄鱼 目前退役"}]];
     end = CACurrentMediaTime();
     printf("insertDataList:         %8.8fms   \n", (end - begin)*1000);

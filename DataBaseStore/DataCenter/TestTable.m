@@ -23,13 +23,11 @@
 }
 - (NSDictionary *)columnInfo
 {
-    return @{
-            @"primaryKey":@"INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL",
-            @"name":@"TEXT",
-            @"age":@"INTEGER",
-            @"stuClass":@"INTEGER",
-            @"tomas":@"TEXT NOT NULL"
-            };
+    return @{COLUMN_INFO(TestModel, primaryKey):@"INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL",
+             COLUMN_INFO(TestModel, name):@"TEXT",
+             COLUMN_INFO(TestModel, age):@"INTEGER",
+             COLUMN_INFO(TestModel, stuClass):@"INTEGER",
+             COLUMN_INFO(TestModel, tomas):@"TEXT NOT NULL",};
 }
 
 - (NSString *)primaryKeyName
